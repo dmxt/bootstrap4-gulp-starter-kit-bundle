@@ -1,13 +1,11 @@
-# About Bootstrap + gul + kit
-This repo is a kit for front-end developers, the base kit for them to either use or build on, and use it so they can start a new project right away without setting up the same thing all over again.
+# About this kit
+This kit contains latest version of Bootstrap and gulpfile.js with SCSS compiler and BrowserSync. This repo is for front-end developers, the base kit for them to either use or build on, and use it so they can start a new project right away without setting up the same thing all over again.
 
-I use this repo personally, so this repo will be always maintained continuously.
-
-This kit contains latest version of Bootstrap and gulpfile.js with SCSS compiler and BrowserSync. More detailed information about the gulp is below.
-
-This repo is also part of [my gulp tutorial for Windows users](https://github.com/dmxt/beginner-gulp-tutorial-on-windows)'s material for beginners to start using gulp. I also made tutorial for any development workflow on Windows OS on [Medium article](https://uxdesign.cc/designers-workflow-on-windows-57393856ae59).
+I use this repo personally, so this repo will be always maintained continuously. More detailed information about the gulp is below.
 
 _To request a new version and feature or report a bug, please open an issue._
+
+_This repo is also part of [my gulp tutorial for Windows users](https://github.com/dmxt/beginner-gulp-tutorial-on-windows)'s material for beginners to start using gulp. I also made tutorial for any development workflow on Windows OS on [Medium article](https://uxdesign.cc/designers-workflow-on-windows-57393856ae59)._
 
 ---
 
