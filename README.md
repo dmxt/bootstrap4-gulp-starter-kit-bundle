@@ -49,16 +49,16 @@ _Note: SCSS is used in this kit, therefore SASS wasn't mentioned, but this SASS/
 
 ---
 
-### How to run gulp
+### How to run gulp in this kit
 _Note: If this is your first time, please refer to 'For gulp beginners' section below._
 
-###### 1. CD to a folder 'gulp' containing `gulpfile.js`
-###### 2. Install dependencies
+##### 1. CD to a folder 'gulp' containing `gulpfile.js`
+##### 2. Install dependencies
 ```
 npm install --save-dev
 ```
 
-###### 3. Start compiling, serving, and watching files
+##### 3. Start compiling, serving, and watching files
 ```
 gulp
 ```
@@ -68,7 +68,7 @@ gulp
 ### (For beginners) How to run gulp
 For Windows users who never had any experience with gulp, please try out [my tutorial](https://github.com/dmxt/beginner-gulp-tutorial-on-windows) for developers like you. For non-Windows users, it's technically easier to run commands like `npm`/`gulp` on UNIX/LINUX system.
 
-#### **1. Terminal (Windows users)**
+#### **Terminal. Do this first if you're Windows user.**
 _Skip this if you're on macOS or Linux, you have a terminal preinstalled on your operating system._
 
 You need terminal to use npm and gulp. Terminal is available out of the box on Linux and OS X.
@@ -77,14 +77,14 @@ Windows has it as well but cmd and PowerShell is not sustainable for development
 
 *Notice: If you still have trouble installing terminal from above, I wrote a more detailed guide here in [beginning gulp tutorial for Windows users](https://github.com/dmxt/beginner-gulp-tutorial-on-windows#step-1---terminal-windows).*
 
-#### **2. npm**
+#### **1. npm**
 _npm, the gulp.js dependent package_
 
 Install [npm](https://nodejs.org/en/download/). This is available for all operating system.
 
 For Windows, during the installation, be sure 'add to PATH' is included ([image](http://i.imgur.com/lHiNR7p.png)). When installed, restart cmder and enter `npm` in terminal to see if it's working properly, as in it should tell you the usage information. If it does, proceed to the next step.
 
-#### **3. gulp**
+#### **2. gulp**
 1. Install gulp globally with this terminal command: `npm install --global gulp`. Windows users can run this script as long npm is properly installed.
 
 Finally, as described in above Gulp condensed commands section:
