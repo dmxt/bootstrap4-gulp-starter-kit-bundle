@@ -7,13 +7,22 @@
 #### Summary
 This kit contains latest version of Bootstrap and gulpfile.js with SCSS compiler and BrowserSync. This repo is for front-end developers, the base kit for them to either use or build on, and use it so they can start a new project right away without setting up the same thing all over again.
 
-I use this repo personally, so this repo will be always maintained continuously. 
+I use this repo personally, so this repo will be always maintained continuously.
 
-Gulp script is in JavaScript, so you can easily modify it for your own workflow configurations.
+Basic knowledge in gulp will be helpful, however I have a tutorial for gulp and Windows terminal beginners, as mentioned below.
+
+Feel free to fork and make your own starter kit. If you think you can contribute, just pull `gulpfile.js` and script in any method that you think that would contribute to this starter kit. You also can modify this README for contribution purposes, I would recognize your effort and highly appreciate it. If appropriate, I'll grant the push request.
 
 _To request a new version and feature or report a bug, please open an issue._
 
 _This repo is also part of [my gulp tutorial for Windows users](https://github.com/dmxt/beginner-gulp-tutorial-on-windows)'s material for beginners to start using gulp. I also made tutorial for any development workflow on Windows OS on [Medium article](https://uxdesign.cc/designers-workflow-on-windows-57393856ae59)._
+
+---
+
+### Unnecessary files:
+When you clone this repository, you may remove these files since they're deemed as unnecesary in working stage.
+* `LICENSE`
+* `README.md`
 
 ---
 
@@ -27,11 +36,15 @@ _This repo is also part of [my gulp tutorial for Windows users](https://github.c
 * `assets/js/vendors/bootstrap.bundle.min.js` (the bundle is a bootstrap.js with popper.js inbuilt and majority of Bootstrap JS effects require popper.js (for modal, dropdown, popover, etc)
 * `index.html`
 
-Non-existing git folder due to empty content:
+**Non-existing git folder due to empty content and the guideline:**
 * `assets/scss/main.scss` will generate the minified CSS `assets/css/main.min.css` on \*.scss modifications and file saves, as per to gulpfile.js rules.
-* Images to `assets/img/**/*` and inner subdirectories when appropriate (ex. `icons/*`, `effects/*`, `jumbotron/*`, `sliders/*`, `photography/**/*`, etc.)
-* Fonts to `assets/fonts/**/*`.
-* Any other materials, that doesn't belong in other folder, go in `assets/**/*`.
+
+* Images belong to `assets/img/**/*` (or `images` if you prefer)
+   * Inner subdirectories for images, i.e `assets/img/icons/*`, apply your own preferences for organizing images.
+* Fonts belong to `assets/fonts/**/*`.
+* Custom JS belong to `assets/js/*`
+* `vendors` folder is for libraries and other JS/CSS files that are not your own.
+* Any other materials, that doesn't belong in other folder go in `assets/**/*`, name them by your own preferences.
 
 ---
 
@@ -52,6 +65,8 @@ _Note: SCSS is used in this kit, therefore SASS wasn't mentioned, but this SASS/
 ### How to run gulp in this kit
 _Note: If this is your first time, please refer to 'For gulp beginners' section below._
 
+For these commands to be functional, you need to install nodeJS and install npm as a nodeJS package.
+
 ##### 1. CD to a folder 'gulp' containing `gulpfile.js`
 ##### 2. Install dependencies
 ```
@@ -62,18 +77,19 @@ npm install --save-dev
 ```
 gulp
 ```
+*I wrote the watch feature as default in `gulpfile.js` so just the command `gulp` will serve **and watch***.
 
 ---
 
 ### (For beginners) How to run gulp
 For Windows users who never had any experience with gulp, please try out [my tutorial](https://github.com/dmxt/beginner-gulp-tutorial-on-windows) for developers like you. For non-Windows users, it's technically easier to run commands like `npm`/`gulp` on UNIX/LINUX system.
 
-#### **Terminal. Do this first if you're Windows user.**
-_Skip this if you're on macOS or Linux, you have a terminal preinstalled on your operating system._
+#### **0. Terminal. Do this first if you're Windows user.**
+_Skip this if you're on macOS or Linux, you have a terminal preinstalled on your operating system._ Terminal is available out of the box on Linux and OS X. You need a terminal to run npm and gulp. Windows have terminals out of the box as well but default cmd and PowerShell is not sustainable for development work.
 
-You need terminal to use npm and gulp. Terminal is available out of the box on Linux and OS X.
+I recommend you to install [cmder](http://cmder.net/) as a replacement for Windows terminal, personally I use their custom cmd.exe (`cmd /k "%ConEmuDir%\..\init.bat"` because it includes many UNIX libraries and you can run wget and other UNIX commands. Howver, if you prefer, you can run PowerShell, cygwin, **Babun**, mitty, MinGW and more under cmder. Very nifty and powerful tool. I want to note Babun, the powerful and cygwin based for Windows and runs ZSH on default.
 
-Windows has it as well but cmd and PowerShell is not sustainable for development work (I've met some people who prefer it, well, to each their own). I recommend you to install [cmder](http://cmder.net/) as a replacement for Windows terminal and use their custom cmd.exe (`cmd /k "%ConEmuDir%\..\init.bat"` instead of default PowerShell). If you have runtime error when starting cmder, you'll probably need to install VS 2015, see [the issue here](https://github.com/cmderdev/cmder/issues/501).
+If you have runtime error when starting cmder, you'll probably need to install VS 2015, see [the issue here](https://github.com/cmderdev/cmder/issues/501).
 
 *Notice: If you still have trouble installing terminal from above, I wrote a more detailed guide here in [beginning gulp tutorial for Windows users](https://github.com/dmxt/beginner-gulp-tutorial-on-windows#step-1---terminal-windows).*
 
