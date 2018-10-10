@@ -60,7 +60,7 @@ When you clone this repository, you may remove these files since they're deemed 
 ---
 
 ### How to run gulp in this kit
-_Note: If you want to learn how to run the gulp script, please refer to the wiki [how to run gulp for this kit](https://github.com/dmxt/bootstrap-gulp-scss-kit/wiki/How-do-I-run-gulp)_
+_Note: If you want to learn how to run the gulp script, please refer to the wiki [how to run gulp for this kit](https://github.com/dmxt/bootstrap-gulp-scss-kit/wiki/How-to-run-gulp-for-this-kit).
 
 For these commands to be functional, you need to install node.js and npm.
 
