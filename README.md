@@ -1,15 +1,14 @@
-# About this kit
+# What is this kit?
+
+This kit contains latest version of Bootstrap and gulpfile.js with SCSS compiler and BrowserSync. This repo is for front-end developers, the base kit for them to either use or build on, and use it so they can start a new project right away without setting up the same thing all over again.
+
 #### Kit descriptions
 * index.html minimal boilerplate
 * Bootstrap framework
 * Gulp scripts, configured in `/gulp/gulpfile.js` with BrowserSync, compiles SASS/SCSS, minifies compiled CSS and notifies you on SCSS compile error with a toast notifier. There's more details about this gulp script further below on this readme.
 
 #### Summary
-This kit contains latest version of Bootstrap and gulpfile.js with SCSS compiler and BrowserSync. This repo is for front-end developers, the base kit for them to either use or build on, and use it so they can start a new project right away without setting up the same thing all over again.
-
 I use this repo personally, so this repo will be always maintained continuously.
-
-Basic knowledge in gulp will be helpful, however I have a tutorial for gulp and Windows terminal beginners, as mentioned below.
 
 Feel free to fork and make your own starter kit. If you think you can contribute, just pull `gulpfile.js` and script in any method that you think that would contribute to this starter kit. You also can modify this README for contribution purposes, I would recognize your effort and highly appreciate it. If appropriate, I'll grant the push request.
 
