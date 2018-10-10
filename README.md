@@ -5,7 +5,7 @@ This kit contains latest version of Bootstrap and gulpfile.js with SCSS compiler
 #### Kit descriptions
 * index.html minimal boilerplate
 * Bootstrap framework
-* Gulp scripts, configured in `/gulp/gulpfile.js` with BrowserSync, compiles SASS/SCSS, minifies compiled CSS and notifies you on SCSS compile error with a toast notifier. More details below.
+* Gulp scripts, configured in `/gulp/gulpfile.js` with BrowserSync, compiles SASS/SCSS, minifies compiled CSS and notifies you on SCSS compile error with a toast notifier. _Note: If you want to learn how to run the gulp script, please refer to the wiki [how to run gulp for this kit](https://github.com/dmxt/bootstrap-gulp-scss-kit/wiki/How-to-run-gulp-for-this-kit)._
 
 #### Detailed gulpfile.js script content
 * **BrowserSync** — a live view for your site under development, refreshes automatically on a file change.
@@ -60,7 +60,7 @@ When you clone this repository, you may remove these files since they're deemed 
 ---
 
 ### How to run gulp in this kit
-_Note: If you want to learn how to run the gulp script, please refer to the wiki [how to run gulp for this kit](https://github.com/dmxt/bootstrap-gulp-scss-kit/wiki/How-to-run-gulp-for-this-kit).
+_Note: If you want to learn how to run the gulp script, please refer to the wiki [how to run gulp for this kit](https://github.com/dmxt/bootstrap-gulp-scss-kit/wiki/How-to-run-gulp-for-this-kit)._
 
 For these commands to be functional, you need to install node.js and npm.
 
