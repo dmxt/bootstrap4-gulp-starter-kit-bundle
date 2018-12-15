@@ -1,17 +1,2 @@
-/* Compiled and minified CSS will be here after modifying /css/main.css
- * while running gulp.
- *
- * The current gulp script does the following:
- *  1. Listens for any modifications in /scss/*.scss
- *  2. When modification is discovered, immediately compiles from
- *     /scss/FILENAME.scss to /css/FILENAME.css
- *  3. Immediately afterward, minifies and renames from FILENAME.css
- *     to FILENAME.min.css
- *
- * Hence editing /scss/main.scss will compily and minify the content
- * and rename /css/main.css file to this file. You can modify any of
- * these three features in the gulp.js file.
- *
- * This message will be gone after main.scss compilation — it will be
- * only visible on repo in original state.
- */
+body{color:green}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxLQUNFLFdBQVksQ0FDYiIsImZpbGUiOiJtYWluLm1pbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcclxuICBjb2xvcjogZ3JlZW47XHJcbn1cclxuIl19 */

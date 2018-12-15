@@ -1,39 +1,57 @@
-var path = "..";
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var plumber = require('gulp-plumber');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var sourcemaps = require('gulp-sourcemaps');
-var rename = require("gulp-rename");
-var notify = require("gulp-notify");
+var gulp = require("gulp"),
+    sass = require("gulp-sass"),
+    postcss = require("gulp-postcss"),
+    autoprefixer = require("autoprefixer"),
+    cssnano = require("cssnano"),
+    sourcemaps = require("gulp-sourcemaps"),
+    browserSync = require("browser-sync").create(),
+    plumber = require("gulp-plumber"),
+    notify = require("gulp-notify");
+    concat = require("gulp-concat");
+    rename = require("gulp-rename");
 
-gulp.task('serve', ['sass'], function() {
+var paths = {
+    styles: {
+        scss: "../assets/scss/**/*.scss",
+        css: "../assets/css"
+    },
+    html: "../*.html",
+};
 
+function scss() {
+    return gulp
+        .src(paths.styles.scss)
+
+        .pipe(sourcemaps.init())
+        .pipe(plumber({
+            errorHandler: notify.onError("Error: <%= error.message %>")}))
+        .pipe(sass({
+            outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(postcss([autoprefixer(),cssnano({
+            discardComments: {removeAll: true}})]))
+
+        .pipe(concat("main.css"))
+        .pipe(rename({ suffix: ".min" }))
+
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(paths.styles.css))
+
+        .pipe(browserSync.stream());
+}
+
+function reload() {
+    browserSync.reload();
+}
+
+function watch() {
     browserSync.init({
         server: "..",
         notify: false
     });
+    gulp.watch(paths.styles.scss, scss)
+    gulp.watch(global + "/html.css")
+}
 
-    gulp.watch(path + "/assets/scss/*.scss", ['sass']);
-    gulp.watch(path + "/assets/js/vendors/*.js", ['concat']);
-    gulp.watch(path + "/*.html").on('change', browserSync.reload);
-});
+gulp.task('default', gulp.parallel(scss, watch));
 
-gulp.task('sass', function() {
-    return gulp.src(path + "/assets/scss/*.scss")
-        .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(rename("main.min.css"))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path + "/assets/css/"))
-        .pipe(browserSync.stream());
-});
-
-gulp.task('concat', function() {
-    return gulp.src(path + "/assets/js/vendors/*.js")
-        .pipe(concat("vendors.js"))
-        .pipe(gulp.dest(path + "/assets/js/"));
-});
-
-gulp.task('default', ['serve']);
+exports.watch = watch;
