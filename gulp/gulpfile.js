@@ -6,8 +6,8 @@ var gulp = require("gulp"),
     sourcemaps = require("gulp-sourcemaps"),
     browserSync = require("browser-sync").create(),
     plumber = require("gulp-plumber"),
-    notify = require("gulp-notify");
-    concat = require("gulp-concat");
+    notify = require("gulp-notify"),
+    concat = require("gulp-concat"),
     rename = require("gulp-rename");
 
 var paths = {
@@ -15,7 +15,7 @@ var paths = {
         scss: "../assets/scss/**/*.scss",
         css: "../assets/css"
     },
-    html: "../*.html",
+    html: "../*.html"
 };
 
 function scss() {
