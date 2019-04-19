@@ -20,9 +20,9 @@ This repo is for front-end developers, the base kit for them to build on, and us
 * Bootstrap framework
 * Gulp scripts, configured in `/gulp/gulpfile.js`
 
-_Note: It is not required to use gulp, but I recommend you to. [Learn how to run gulp for this kit within 5 minutes](https://github.com/dmxt/bootstrap-gulp-scss-kit/wiki/How-to-run-gulp-for-this-kit) or learn more in more detailed [Gulp tutorial for Windows users](https://github.com/dmxt/beginner-gulp-tutorial-on-windows)._
+_Note: It is not required to use gulp, but I recommend you to. [Learn how to run gulp for this kit within 5 minutes](https://github.com/dmxt/bootstrap-gulp-scss-kit/wiki/How-to-run-gulp-for-this-kit) or learn more in more detailed [Gulp tutorial fot Windows user](https://github.com/dmxt/beginner-gulp-tutorial-on-windows)._
 
-_I also made a tutorial for a development workflow on Windows in this [Medium article](https://uxdesign.cc/designers-workflow-on-windows-57393856ae59._
+_I also made a tutorial for a [development workflow on Windows](https://uxdesign.cc/designers-workflow-on-windows-57393856ae59), useful for anybody who want to discover more development software on Windows._
 
 #### Detailed gulpfile.js script content
 * **BrowserSync** — a live view for your site under development, refreshes automatically on a file change.
